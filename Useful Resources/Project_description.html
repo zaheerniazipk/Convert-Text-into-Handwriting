@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project Description</title>
+</head>
+<body>
+
+
+<h2>step1: install and import libraries</h2>
+pip install pywhatkit <br>
+pip install opencv-python <br>
+
+<a href="https://www.tutorialspoint.com/how-to-install-opencv-in-python">OpenCV Installation Guide</a>
+
+
+<h2>step2: import Libraries</h2>
+import pywhatkit as kit <br>
+import cv2
+
+
+<h2>step3: use of pywhatkit function </h2>
+# This function can be used to convert text to hand written characters   <br>
+# kit.text_to_handwriting(...) <br>
+The parameters are <br>
+string (required) - String that you want to convert to handwritten text <br>
+save_to (optional, save_to = "pywhatkit.png") - Path where the image will be saved <br>
+rgb (optional, rgb = (0,0,138)) - Color of the handwritten character in rgb format <br>
+
+<a href="https://pypi.org/project/pywhatkit/">pywhatkit Guide</a> <br>
+
+
+<h2>step4: cv2.imread(.,1) </h2> here flag value is 1
+cv2.imread() method loads an image from the specified file. <br>
+If the image cannot be read (because of missing file, improper permissions, unsupported or invalid format) then this method returns an empty matrix. <br>
+
+<a href="https://www.geeksforgeeks.org/python-opencv-cv2-imread-method/">python-opencv-cv2-imread-method</a> <br>
+
+
+<h2>step5: cv2.imshow(.,.)</h2>
+cv2.imshow() method is used to display an image in a window. The window automatically fits to the image size. <br>
+<a href="https://www.geeksforgeeks.org/python-opencv-cv2-imshow-method/">python-opencv-cv2-imshow-method</a> <br>
+
+
+<h2>step6: cv2.waitKey()</h2> 
+cv2.waitkey() allows you to wait for a specific time in milliseconds until you press any button on the keyword <br>
+Note:  <br>
+1.waitKey(0) will display the window infinitely until any keypress (it is suitable for image display). <br>
+2.waitKey(1) will display a frame for 1 ms, after which display will be automatically closed. <br>
+
+<a href="https://www.datasciencelearner.com/cv2-waitkey-in-python-example/">cv2-waitkey-in-python-example</a> <br>
+
+
+<h2>step7: destroy all windows we created</h2>
+cv2.destroyAllWindows() <br>
+
+
+<h2>Additional resources:</h2>
+
+<a href="https://medium.com/analytics-vidhya/top-5-inevitable-methods-for-beginners-in-opencv-using-python-9ff8e7ddb5ae">learn more about opencv</a> <br>
+<a href="https://stackoverflow.com/questions/67440510/cv2-error-opencv4-5-2-error-215assertion-failed-src-empty-in-functi">How to tackle most common cv2.read error</a><br>
+
+
+
+
+
+</body>
+</html>
